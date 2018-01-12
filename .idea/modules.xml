@@ -5,6 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/ColorDemo.iml" filepath="$PROJECT_DIR$/ColorDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/qbase/qbase.iml" filepath="$PROJECT_DIR$/qbase/qbase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qimagepicker/qimagepicker.iml" filepath="$PROJECT_DIR$/qimagepicker/qimagepicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qjsbridge/qjsbridge.iml" filepath="$PROJECT_DIR$/qjsbridge/qjsbridge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qmap/qmap.iml" filepath="$PROJECT_DIR$/qmap/qmap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qrcode/qrcode.iml" filepath="$PROJECT_DIR$/qrcode/qrcode.iml" />
     </modules>
   </component>
 </project>

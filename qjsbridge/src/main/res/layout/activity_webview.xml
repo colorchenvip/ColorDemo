@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.colorchen.lib.qjsbridge.bridge.YTWebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/downloadingProgressContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_progress_circle_white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <at.grabner.circleprogress.CircleProgressView
+                android:id="@+id/circleView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                CircleProgressView:cpv_autoTextSize="false"
+                CircleProgressView:cpv_barColor="#3D98DE"
+                CircleProgressView:cpv_barWidth="5dp"
+                CircleProgressView:cpv_innerContourSize="0dp"
+                CircleProgressView:cpv_maxValue="100"
+                CircleProgressView:cpv_outerContourSize="0dp"
+                CircleProgressView:cpv_rimColor="#eee"
+                CircleProgressView:cpv_rimWidth="5dp"
+                CircleProgressView:cpv_seekMode="true"
+                CircleProgressView:cpv_showUnit="true"
+                CircleProgressView:cpv_spinColor="#3D98DE"
+                CircleProgressView:cpv_textColor="#333333"
+                CircleProgressView:cpv_textScale="1"
+                CircleProgressView:cpv_textSize="20sp"
+                CircleProgressView:cpv_unit="%"
+                CircleProgressView:cpv_unitColor="#333333"
+                CircleProgressView:cpv_unitPosition="right_bottom"
+                CircleProgressView:cpv_unitScale="1"
+                CircleProgressView:cpv_unitSize="15sp"
+                CircleProgressView:cpv_value="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:text="加载中..."
+                android:textColor="#333"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

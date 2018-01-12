@@ -10,6 +10,10 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/qbase" />
+            <option value="$PROJECT_DIR$/qimagepicker" />
+            <option value="$PROJECT_DIR$/qjsbridge" />
+            <option value="$PROJECT_DIR$/qmap" />
+            <option value="$PROJECT_DIR$/qrcode" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

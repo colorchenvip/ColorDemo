@@ -1,1 +1,1 @@
-include ':app', ':qbase'
+include ':app', ':qbase', ':qmap', ':qrcode', ':qjsbridge', ':qimagepicker'

@@ -1,18 +1,32 @@
 package com.colorchen.demo;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import com.colorchen.demo.base.BaseActivity;
+
 /**
  * name：MainActivity
  * @author: ChenQ
  * @date: 2018-1-12
  * @email: wxchenq@yutong.com
  */
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public int layoutId() {
+        return R.layout.activity_main;
+    }
+
+    @Override
+    public void initView() {
+
+    }
+
+    @Override
+    public void initData() {
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
 }

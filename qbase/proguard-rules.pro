@@ -20,3 +20,7 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
  -keep class com.gyf.barlibrary.* {*;}
+
+ -keep class com.blankj.utilcode.** { *; }
+ -keepclassmembers class com.blankj.utilcode.** { *; }
+ -dontwarn com.blankj.utilcode.**

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">QMap</string>
+    <string name="tip_please_open_permission">请打开系统设置中隐私->定位服务,允许新能源使用您的位置</string>
+    <string name="btn_set_permission">设置</string>
+</resources>

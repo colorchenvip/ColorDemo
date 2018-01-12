@@ -4,11 +4,10 @@ android {
     compileSdkVersion 26
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
@@ -23,6 +22,11 @@ android {
         targetCompatibility 1.8
         sourceCompatibility 1.8
     }
+    lintOptions {
+        abortOnError false
+    }
+    packageBuildConfig(false)
+
 }
 
 dependencies {
@@ -37,6 +41,11 @@ dependencies {
     api 'com.android.support:appcompat-v7:26.1.0'
     api 'com.android.support:support-fragment:26.1.0'
     api 'com.android.support:design:26.1.0'
+
+    /*加密储存工具*/
+    api 'com.orhanobut:hawk:2.0.1'
+    /*三方工具类 文档详情：https://github.com/Blankj/AndroidUtilCode/blob/master/utilcode/README-CN.md*/
+    api 'com.blankj:utilcode:1.11.1'
 
     api "org.greenrobot:eventbus:3.0.0"
     api "com.google.code.gson:gson:2.8.2"
