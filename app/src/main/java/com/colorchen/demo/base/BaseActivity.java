@@ -7,6 +7,7 @@ import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Toast;
 
 import com.colorchen.demo.R;
 
@@ -22,8 +23,10 @@ import me.yokeyword.fragmentation.SupportActivity;
  * @email： wxchenq@yutong.com
  * des：
  */
-public abstract class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends SupportActivity {
+
     protected CompositeDisposable compositeDisposable;
+
     @LayoutRes
     protected abstract int layoutId();
 
@@ -33,6 +36,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     /**
      * 优化重构onCreate 方法加入定义方法
+     *
      * @param savedInstanceState
      */
     @Override
@@ -45,8 +49,6 @@ public abstract class BaseActivity extends AppCompatActivity {
         initView();
         initData();
     }
-
-
 
     @Override
     protected void onDestroy() {
