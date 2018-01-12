@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleToolbar">
+        <attr name="titleVisible" format="boolean" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="titleTextColor" format="color" />
+        <attr name="subtitleColor" format="color" />
+        <attr name="subtitleVisible" format="boolean" />
+        <attr name="subtitleTextSize" format="dimension" />
+
+        <attr name="title_gravity">
+            <flag name="top" value="0x30" />
+            <flag name="bottom" value="0x50" />
+            <flag name="left" value="0x03" />
+            <flag name="right" value="0x05" />
+            <flag name="center_vertical" value="0x10" />
+            <flag name="fill_vertical" value="0x70" />
+            <flag name="center_horizontal" value="0x01" />
+            <flag name="fill_horizontal" value="0x07" />
+            <flag name="center" value="0x11" />
+            <flag name="fill" value="0x77" />
+            <flag name="clip_vertical" value="0x80" />
+            <flag name="clip_horizontal" value="0x08" />
+            <flag name="start" value="0x00800003" />
+            <flag name="end" value="0x00800005" />
+        </attr>
+
+        <attr name="closeVisible" format="boolean" />
+        <attr name="closeText" format="string" />
+        <attr name="closeTextAppearance" format="reference" />
+        <attr name="closeTextColor" format="color" />
+        <attr name="closeTextSize" format="dimension" />
+
+        <attr name="backVisible" format="boolean" />
+        <attr name="backText" format="string" />
+        <attr name="backTextAppearance" format="reference" />
+        <attr name="backTextColor" format="color" />
+        <attr name="backTextSize" format="dimension" />
+        <attr name="backIcon" format="reference" />
+        <attr name="backMarginRight" format="dimension" />
+
+        <attr name="rightThirdVisible" format="boolean" />
+        <attr name="rightThirdText" format="string" />
+        <attr name="rightThirdTextAppearance" format="reference" />
+        <attr name="rightThirdTextColor" format="color" />
+        <attr name="rightThirdTextSize" format="dimension" />
+        <attr name="rightThirdIcon" format="reference" />
+        <attr name="rightThirdMarginRight" format="dimension" />
+
+
+        <attr name="rightSecondVisible" format="boolean" />
+        <attr name="rightSecondText" format="string" />
+        <attr name="rightSecondTextAppearance" format="reference" />
+        <attr name="rightSecondTextColor" format="color" />
+        <attr name="rightSecondTextSize" format="dimension" />
+        <attr name="rightSecondIcon" format="reference" />
+        <attr name="rightSecondMarginRight" format="dimension" />
+
+        <attr name="okVisible" format="boolean" />
+        <attr name="okText" format="string" />
+        <attr name="okTextAppearance" format="reference" />
+        <attr name="okTextColor" format="color" />
+        <attr name="okTextSize" format="dimension" />
+        <attr name="okIcon" format="reference" />
+        <attr name="okMarginRight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="AutoFlowLayout">
+        <attr name="singleLine" format="boolean">true</attr>
+        <attr name="maxLines" format="integer">100</attr>
+        <attr name="multiChecked" format="boolean">false</attr>
+        <attr name="horizontalSpace" format="dimension">8</attr>
+        <attr name="verticalSpace" format="dimension">5</attr>
+        <attr name="columnNumbers" format="integer">3</attr>
+        <attr name="rowNumbers" format="integer">5</attr>
+        <attr name="cutLineWidth" format="dimension">1</attr>
+        <attr name="cutLineColor" format="color"></attr>
+        <attr name="cutLine" format="boolean">false</attr>
+        <attr name="lineCenter" format="boolean">false</attr>
+    </declare-styleable>
+
+    <declare-styleable name="setting_item">
+        <attr name="isShowPoint" format="boolean">false</attr>
+        <attr name="isShowToggleButton" format="boolean">false</attr>
+        <attr name="name_item" format="string" />
+        <attr name="state_name_item" format="string" />
+        <attr name="state_icon_item" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="video_loading">
+        <attr name="isShowToast" format="boolean">false</attr>
+        <attr name="isPause" format="boolean">false</attr>
+        <attr name="loading_text" format="string" />
+        <attr name="loading_toast_text" format="string" />/>
+    </declare-styleable>
+
+    <declare-styleable name="SeekBarHint">
+        <attr name="popupWidth" format="dimension" />
+        <attr name="yOffset" format="dimension" />
+        <attr name="popupStyle" format="enum">
+            <enum name="follow" value="0" />
+            <enum name="fixed" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundCornerProgress">
+        <attr name="rcReverse" format="boolean" />
+        <attr name="rcProgress" format="float" />
+        <attr name="rcMax" format="float" />
+        <attr name="rcSecondaryProgress" format="float" />
+        <attr name="rcBackgroundPadding" format="dimension" />
+        <attr name="rcRadius" format="dimension" />
+        <attr name="rcProgressColor" format="color" />
+        <attr name="rcSecondaryProgressColor" format="color" />
+        <attr name="rcBackgroundColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="MutilStateLayout">
+        <attr name="mslAnimationEnabled" format="boolean" />
+        <attr name="mslInAnimation" format="reference" />
+        <attr name="mslOutAnimation" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="NormalIndicator">
+        <attr name="normal_selector" format="reference" />
+        <attr name="normal_leftmargin" format="dimension" />
+        <attr name="normal_dismiss_open" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension" />
+        <attr name="roundtextColor" format="color" />
+        <attr name="roundtextSize" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="textIsDisplayable" format="boolean" />
+        <attr name="style">
+            <enum name="STROKE" value="0" />
+            <enum name="FILL" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
