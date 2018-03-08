@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">QBase</string>
+
+    <string name="widget_msl_retry">刷新</string>
+    <string name="widget_msl_offline">连接失败，请检查你的网络设置</string>
+    <string name="widget_msl_empty">暂无相关数据</string>
+    <string name="widget_msl_loading">加载中，请稍后...</string>
+    <string name="widget_msl_error">数据传输出错，请重试</string>
 </resources>

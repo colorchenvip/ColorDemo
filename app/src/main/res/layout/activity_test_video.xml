@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical">
+
+    <com.colorchen.qbase.widget.TitleToolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/white"
+        app:title="用户直播列表"
+        app:titleTextColor="@color/text_black_lv1"
+        app:titleTextSize="@dimen/title_text_size"
+        app:title_gravity="center" />
+
+    <com.colorchen.qbase.widget.mutilstatelayout.MultiStateLayout
+        android:id="@+id/teacherLoadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/teacherRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/common_bg"
+            app:srlAccentColor="@color/common_bg"
+            app:srlEnablePreviewInEditMode="true"
+            app:srlPrimaryColor="#444444">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/teacherMainList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_bg"
+                android:overScrollMode="never" />
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    </com.colorchen.qbase.widget.mutilstatelayout.MultiStateLayout>
+
+</LinearLayout>
