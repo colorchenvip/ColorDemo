@@ -9,6 +9,7 @@ import com.colorchen.demo.base.BaseActivity;
  */
 public class HomeActivity extends BaseActivity {
 
+
     @Override
     protected int layoutId() {
         return R.layout.activity_test_demo;
@@ -16,6 +17,7 @@ public class HomeActivity extends BaseActivity {
 
     @Override
     protected void initView() {
+
 
     }
 

@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical">
 
     <TextView
+        android:id="@+id/text1"
+        style="@style/text_common"
+        android:layout_width="180dp"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:background="@drawable/selector_default"
+        android:text="背景色" />
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-
-</RelativeLayout>
+        android:layout_margin="10dp"
+        android:background="@drawable/selector_default1"
+        android:padding="10dp"
+        android:text="带阴影的按钮"
+        android:textColor="#ff0000"/>
+</LinearLayout>

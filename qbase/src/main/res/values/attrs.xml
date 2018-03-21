@@ -116,13 +116,6 @@
         <attr name="rcBackgroundColor" format="color" />
     </declare-styleable>
 
-
-    <declare-styleable name="MutilStateLayout">
-        <attr name="mslAnimationEnabled" format="boolean" />
-        <attr name="mslInAnimation" format="reference" />
-        <attr name="mslOutAnimation" format="reference" />
-    </declare-styleable>
-
     <declare-styleable name="NormalIndicator">
         <attr name="normal_selector" format="reference" />
         <attr name="normal_leftmargin" format="dimension" />
@@ -142,5 +135,11 @@
             <enum name="STROKE" value="0" />
             <enum name="FILL" value="1" />
         </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MultiStateLayout">
+        <attr name="mslAnimationEnabled" format="boolean" />
+        <attr name="mslInAnimation" format="reference" />
+        <attr name="mslOutAnimation" format="reference" />
     </declare-styleable>
 </resources>

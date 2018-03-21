@@ -1,6 +1,5 @@
 package com.colorchen.demo.base;
 
-import android.app.Application;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;

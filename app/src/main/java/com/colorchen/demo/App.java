@@ -21,7 +21,7 @@ public class App extends Application {
         super.onCreate();
         /*集成三方工具类*/
         Utils.init(this);
-        /*加缪缓存工具类*/
+        /*加密缓存工具类*/
         HawkUtils.init(this);
     }
 
