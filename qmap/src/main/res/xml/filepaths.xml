@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!--
+    对应于:Content.getFilesDir()
+    -->
+    <files-path
+        name="file_paths"
+        path="" />
+    <!-- 对应于: Environment.getExternalStorageDirectory() -->
+    <external-path
+        name="external_path"
+        path="" />
+    <!--对应于: Context.getExternalFilesDir(String)或Context.getExternalFilesDir(null) -->
+    <external-files-path
+        name="external_files_path"
+        path="" />
+
+    <external-cache-path
+        name="external_cache_path"
+        path="" />
+    <!--客户端对应的sd卡的根目录-->
+    <root-path
+        name="root_path"
+        path="" />
+    <cache-path
+        name="cache_path"
+        path="" />
+</paths>

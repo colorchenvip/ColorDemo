@@ -11,18 +11,29 @@
     <TextView
         android:id="@+id/text1"
         style="@style/text_common"
-        android:layout_width="180dp"
+        android:layout_width="wrap_content"
         android:layout_height="42dp"
         android:gravity="center"
         android:background="@drawable/selector_default"
-        android:text="背景色" />
+        android:text="百度地图点聚合" />
 
     <Button
+        android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="@drawable/selector_default1"
         android:padding="10dp"
-        android:text="带阴影的按钮"
+        android:text="百度选择位置"
         android:textColor="#ff0000"/>
+
+    <TextView
+        android:id="@+id/text3"
+        style="@style/text_common"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:background="@drawable/selector_default"
+        android:text="折叠视图" />
+
 </LinearLayout>

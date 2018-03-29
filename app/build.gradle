@@ -9,24 +9,27 @@ android {
             storePassword 'color0789'
         }
     }
-    compileSdkVersion 26
+    compileSdkVersion 27
     defaultConfig {
         applicationId "com.colorchen.demo"
         minSdkVersion 19
-        targetSdkVersion 26
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
         signingConfig signingConfigs.sign
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
             minifyEnabled false
+            signingConfig signingConfigs.sign
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         debug {
             minifyEnabled false
+            signingConfig signingConfigs.sign
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -39,12 +42,16 @@ android {
         preDexLibraries = false
         javaMaxHeapSize "4g"
     }
+
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     api 'com.jakewharton:butterknife:8.8.1'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:support-v4:27.1.0'
+    implementation 'com.android.support:recyclerview-v7:27.1.0'
+    implementation 'com.android.support:design:27.1.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     implementation project(':qbase')
     // appcompat-v7包是必须的
@@ -55,8 +62,11 @@ dependencies {
     api 'me.yokeyword:fragmentation-swipeback:1.2.4'
     // Activity作用域的EventBus，更安全，可有效避免after onSavenInstanceState()异常
     api 'me.yokeyword:eventbus-activity-scope:1.1.0'
+    //    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4'//下拉刷新库 https://github.com/scwang90/SmartRefreshLayout
+    //    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    //    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+    implementation project(':qmap')
 
-//    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4'//下拉刷新库 https://github.com/scwang90/SmartRefreshLayout
-//    implementation 'com.github.bumptech.glide:glide:4.6.1'
-//    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+    compile 'com.lqr.adapter:library:1.0.2'
+    compile 'com.lqr.recyclerview:library:1.0.2'
 }

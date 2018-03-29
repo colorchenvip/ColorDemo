@@ -9,6 +9,9 @@ android {
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
+        manifestPlaceholders = [baidu_api_key   : "g7tio8jk4LlwKYqNk7W7N3zlErwt8Fsc"
+                                , google_api_key: ""
+                                , app_icon      : "@mipmap/ic_launcher"]
     }
 
     buildTypes {
@@ -27,7 +30,6 @@ android {
     dexOptions {
         preDexLibraries = false
     }
-
 }
 
 dependencies {

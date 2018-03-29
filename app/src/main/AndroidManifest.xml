@@ -22,7 +22,40 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HomeActivity"/>
+        <activity android:name=".HomeActivity" />
+        <activity
+            android:name=".map.baidu.MarkerClusterDemo"
+            android:label="百度地图-- 点聚合" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+
+            <!-- 元数据 -->
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity
+            android:name=".map.baidu.MapListActivity"
+            android:label="@string/title_chooselocationactivity_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".map.baidu.ChooseLocationActivity"
+            android:label="@string/title_chooselocationactivity_detail"
+            android:parentActivityName=".map.baidu.MapListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.colorchen.demo.map.baidu.MapListActivity" />
+        </activity>
+        <activity
+            android:name=".map.baidu.MapScrollingActivity"
+            android:label="@string/title_activity_map_scrolling"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

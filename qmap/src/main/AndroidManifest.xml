@@ -30,5 +30,26 @@
             android:process=":remote" >
         </service>
         <service android:name="com.amap.api.location.APSService"/>
+
+        <!-- 地图相关配置-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="${baidu_api_key}" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${google_api_key}" />
+        <meta-data
+            android:name="isBeta"
+            android:value="1" />
+        <!--<provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            &lt;!&ndash;元数据&ndash;&gt;
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>-->
     </application>
 </manifest>
