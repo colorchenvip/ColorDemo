@@ -321,7 +321,7 @@ public class MapScrollingActivity extends BaseActivity implements
 
     @Override
     protected void initData() {
-        searchButtonProcess();
+//        searchButtonProcess();
     }
 
     /**
@@ -342,7 +342,19 @@ public class MapScrollingActivity extends BaseActivity implements
     @Override
     public void onGetReverseGeoCodeResult(ReverseGeoCodeResult result) {
         if (result.error == SearchResult.ERRORNO.NO_ERROR) {
-            mBaiduMap.clear();
+            mPb.setVisibility(View.GONE);
+            mRvPOI.setVisibility(View.VISIBLE);
+
+            for (SuggestionResult.SuggestionInfo info : result.getPoiList()) {
+                if (info != null) {
+                    suggestList.add(info);
+                }
+            }
+            mAdapter.setData(suggestList);
+            mAdapter.notifyDataSetChanged();
+            if (suggestList.size() > 0) {
+                addLocationMark(suggestList.get(0).pt,suggestList.get(0).city);
+            }
 
             return;
         }
@@ -377,7 +389,6 @@ public class MapScrollingActivity extends BaseActivity implements
      * @param cityStr
      */
     private void addLocationMark(LatLng latLng,String cityStr) {
-        mBaiduMap.clear();
         Bundle bundle = new Bundle();
         bundle.putString("city", cityStr);
         MarkerOptions position = new MarkerOptions()
