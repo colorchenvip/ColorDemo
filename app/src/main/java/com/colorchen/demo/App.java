@@ -26,19 +26,17 @@ public class App extends Application {
     private static long mMainThreadId;//主线程id
     private static Looper mMainLooper;//循环队列
     private static Handler mHandler;//主线程Handler
-    private static Handler mainHandler;
-    private static long mainThreadId;
 
     public static Context getContext() {
         return mContext;
     }
 
     public static Handler getMainHandler() {
-        return mainHandler;
+        return mHandler;
     }
 
     public static long getMainThreadId() {
-        return mainThreadId;
+        return mMainThreadId;
     }
 
     @Override

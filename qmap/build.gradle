@@ -39,7 +39,7 @@ dependencies {
     })
     implementation project(':qbase')
 
-    implementation 'com.amap.api:map2d:latest.integration'
+    compile 'com.amap.api:map2d:latest.integration'
     //定位功能
     compile 'com.amap.api:location:latest.integration'
     //搜索功能
