@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#ffc203</color>
+    <color name="colorAccent">#ffc203</color>
+
+    <color name="dialog_divider">#DCDCDC</color>
+    <color name="dialog_ok_btn">#0076ff</color>
+    <color name="half_white">#80ffffff</color>
+    <color name="divider_line">#f3f3f3</color>
+    <color name="bg_blue_button">#3261FF</color>
+    <color name="black_text">#333333</color>
+    <color name="main_gray">#FF8B8B8B</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="tab_unselect">#c9c9c9</color>
+    <color name="bg_btn">#dadada</color>
+
+    <color name="common_bg">#F6F6FA</color>
+
+    <color name="text_black_lv1">#333333</color>
+    <color name="text_black_lv2">#666666</color>
+    <color name="text_black_lv3">#999999</color>
+    <color name="text_hint">#CBCED1</color>
+
+    <color name="status_bar_yellow">#ffc203</color>
+
+    <color name="btn_yellow_normal">#ffc803</color>
+    <color name="btn_yellow_pressed">#F4E22B</color>
+
+    <color name="btn_sign_arrived">#CBCED1</color>
+    <color name="btn_sign_non_arrival">#FF4555</color>
+
+
+</resources>
